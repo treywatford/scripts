@@ -82,6 +82,7 @@ if [[ "${OS_LINUX}" -eq 1 ]]; then
     sudo snap install code                      # visual studio code
     sudo snap install discord                   # discord for chat
     sudo snap install firefox                   # firefox
+    sudo snap install slack --classic           # slack for chat
     
 else # install using homebrew cask for mac
     brew cask install visual-studio-code        # visual studio code
@@ -89,6 +90,7 @@ else # install using homebrew cask for mac
     brew cask install iterm2                    # good terminal for mac
     brew cask install google-chrome             # chrome
     brew cask install firefox                   # firefox
+    brew cask install slack                     # slack for chat
 fi
 
 # comment this out if you do not want to install chrome on linux 
