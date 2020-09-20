@@ -47,6 +47,6 @@ rm -rf fonts
 # change default shell to zsh
 # to undo this action execute chsh -s $(which bash)
 chsh -s ${ZSH_LOCATION}
-
+echo "edit ~/.zshrc and set ZSH_THEME=\"powerlevel9k/powerlevel9k\""
 echo "Please log out of the system and log back in for changes to take effect"
 # this will take the user through the zsh setup routine
