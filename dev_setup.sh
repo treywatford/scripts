@@ -63,12 +63,13 @@ fi
 # install homebrew (so we can use this script for mac/linux/WSL)
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-# add brew to path
-test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
-test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
-echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
-
+# add brew to path (linux)
+if [[ "${OS_LINUX}" -eq 1 ]]; then
+  test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
+  test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+  test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
+  echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
+fi
 
 # apps to install
 brew install go                                 # go language
