@@ -74,8 +74,9 @@ fi
 # apps to install
 brew install go                                 # go language
 brew install vim                                # vim text editor
+brew install node                               # node
 brew install npm                                # node package manager
-brew install yarn				                # yarn
+brew install yarn				                        # yarn
 npm install -g @vue/cli                         # vue CLI
 
 # OS specific installs
@@ -86,12 +87,12 @@ if [[ "${OS_LINUX}" -eq 1 ]]; then
     sudo snap install slack --classic           # slack for chat
     
 else # install using homebrew cask for mac
-    brew cask install visual-studio-code        # visual studio code
-    brew cask install discord                   # discord for chat
-    brew cask install iterm2                    # good terminal for mac
-    brew cask install google-chrome             # chrome
-    brew cask install firefox                   # firefox
-    brew cask install slack                     # slack for chat
+    brew installvisual-studio-code        # visual studio code
+    #brew cask install discord                   # discord for chat
+    brew install iterm2                    # good terminal for mac
+    brew install google-chrome             # chrome
+    brew install firefox                   # firefox
+    brew install slack                     # slack for chat
 fi
 
 # comment this out if you do not want to install chrome on linux 
@@ -101,8 +102,10 @@ if [[ "${OS_LINUX}" -eq 1 ]]; then
     sudo gdebi google-chrome-stable_current_amd64.deb
 fi
 
+# commented this out because it is normally done before cloning this script
+# uncomment if you need it
 
 # create ssh keys and start agent
-ssh-keygen -t rsa -C "${USER_EMAIL}"
-eval "$(ssh-agent -s)"  
-ssh-add ~/.ssh/id_rsa
+#ssh-keygen -t rsa -C "${USER_EMAIL}"
+#eval "$(ssh-agent -s)"  
+#ssh-add ~/.ssh/id_rsa
