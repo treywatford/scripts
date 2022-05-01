@@ -12,7 +12,7 @@
 
 
 # email is a required argument
-# if not arguments are passed exit 
+# if no arguments are passed exit 
 if [ $# -eq 0 ]
   then
     echo "No arguments supplied"
@@ -87,12 +87,13 @@ if [[ "${OS_LINUX}" -eq 1 ]]; then
     sudo snap install slack --classic           # slack for chat
     
 else # install using homebrew cask for mac
-    brew installvisual-studio-code        # visual studio code
-    #brew cask install discord                   # discord for chat
-    brew install iterm2                    # good terminal for mac
-    brew install google-chrome             # chrome
-    brew install firefox                   # firefox
-    brew install slack                     # slack for chat
+    brew install --cask iterm2              # iterm2 becuase default terminal on mac isn't great
+    brew install --cask visual-studio-code  # vscode for editor
+    brew install --cask brave-browser       # brave browser
+  # brew cask install discord               # discord for chat
+    brew install google-chrome              # chrome
+    brew install firefox                    # firefox
+    brew install slack                      # slack for chat
 fi
 
 # comment this out if you do not want to install chrome on linux 

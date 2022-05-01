@@ -8,6 +8,8 @@
 # requirements:
 #   git must be installed and configured (this script uses ssh)
 #   homebrew is used to install zsh
+
+# note: I no longer use this since I have switched to starship.
 ####################################################################
 
 # variables
