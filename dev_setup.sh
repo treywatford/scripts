@@ -76,7 +76,8 @@ brew install go                                 # go language
 brew install vim                                # vim text editor
 brew install node                               # node
 brew install npm                                # node package manager
-brew install yarn				                        # yarn
+brew install yarn				# yarn
+brew install gpg2				# GPG 2
 npm install -g @vue/cli                         # vue CLI
 
 # OS specific installs
@@ -90,7 +91,9 @@ else # install using homebrew cask for mac
     brew install --cask iterm2              # iterm2 becuase default terminal on mac isn't great
     brew install --cask visual-studio-code  # vscode for editor
     brew install --cask brave-browser       # brave browser
-  # brew cask install discord               # discord for chat
+    brew install --cask discord             # discord for chat
+    # brew install --cask blender	    # uncomment to install blender
+    # brew install --cask gimp		    # uncomment to install gimp
     brew install google-chrome              # chrome
     brew install firefox                    # firefox
     brew install slack                      # slack for chat
