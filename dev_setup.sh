@@ -97,6 +97,7 @@ else # install using homebrew cask for mac
     brew install google-chrome              # chrome
     brew install firefox                    # firefox
     brew install slack                      # slack for chat
+    brew install --cask azure-data-studio   # azure data studio for database work
 fi
 
 # comment this out if you do not want to install chrome on linux 
