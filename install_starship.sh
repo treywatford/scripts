@@ -4,7 +4,7 @@
 # install_starship.sh
 # author: Trey Watford (treyjustinwatford@gmail.com)
 # usage:
-#   This script installs and sets up starship cross shell prompt. 
+#   This script installs and sets up starship cross shell prompt.
 #   for details see https://starship.rs/
 ####################################################################
 
@@ -12,4 +12,4 @@
 curl -sS https://starship.rs/install.sh | sh
 
 # add starship to zshrc for z shell
-echo 'eval "$(starship init zsh)"' >> ~/.zshrc
+echo 'eval "$(starship init zsh)"' >>~/.zshrc
