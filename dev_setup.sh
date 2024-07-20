@@ -83,7 +83,8 @@ if [[ "${OS_LINUX}" -eq 1 ]]; then
   sudo snap install firefox         # firefox
   sudo snap install slack --classic # slack for chat
 
-else                                     # install using homebrew cask for mac
+else
+  # install using homebrew cask for mac
   brew install --cask iterm2             # iterm2 becuase default terminal on mac isn't great
   brew install --cask visual-studio-code # vscode for editor
   brew install --cask brave-browser      # brave browser
