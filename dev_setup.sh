@@ -98,6 +98,7 @@ else # install using homebrew cask for mac
     brew install firefox                    # firefox
     brew install slack                      # slack for chat
     brew install --cask azure-data-studio   # azure data studio for database work
+    brew install --cask rectangle           # nice window manager for mac repo: https://github.com/rxhanson/Rectangle
 fi
 
 # comment this out if you do not want to install chrome on linux 
